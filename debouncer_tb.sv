@@ -24,10 +24,9 @@ module debouncer_tb;
 
         // FIRST CASE
         btn = 1;
-        repeat (9) @(posedge clk);
+        repeat (13) @(posedge clk);
         assert(btn_pls_out == 1) else $display("CASE 1: Expected btn debounce 1, received 0");
 
-        #40ns
         // SECOND CASE
         btn = 0;
         repeat (10) @(posedge clk);

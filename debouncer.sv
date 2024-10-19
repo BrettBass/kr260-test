@@ -58,7 +58,7 @@ always_ff @(posedge clk, negedge rst_n) begin
 
         if(btn_r == 'b1) begin
             counter <= 'd0;
-            is_running <= 'b0;
+            is_running <= 'b1;
         end else if (btn_f == 'b1) begin
             counter <= 'd0;
             is_running <= 'b0;
